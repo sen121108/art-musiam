@@ -16,9 +16,7 @@ class artController extends Controller
         return view('explain')->with(['art' => $art]);
     }
     
-     public function quiz(art $art) {
-        return view('quiz')->with(['art' => $art]);
-    }
+    
     
      public function manage() {
         return view('manage');
@@ -30,12 +28,11 @@ class artController extends Controller
     
      public function posts(ArtRequest $request ,art $art) {
         $input = $request['art'];
-        
-        $file_name = $request->file('art.image')->getClientOriginalName();
-        $image = $request->file('art.image')->storeAs('public/images/',$file_name);
-        
         $art->fill($input)->save();
         
+        $image = $request->file('art.image')->storeAs('public/images',$art->id.'post.jpeg' );
+        
+       
         return redirect('/manage/');
     }
     

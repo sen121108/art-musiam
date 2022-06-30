@@ -63,6 +63,9 @@
                 <input type="submit" value="投稿する"/>
               </div>
             </form>
+            <div class="back">
+                <a href="/">投稿を見る</a>
+                </div>
         </section>
         
     </body>
