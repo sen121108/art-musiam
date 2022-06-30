@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','artController@index');
+Route::get('/explain','artController@explain');
+Route::get('/quiz','artController@quiz');
+Route::get('/manage','artController@manage');
+
+Route::post('/posts', 'artController@posts');
