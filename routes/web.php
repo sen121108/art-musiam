@@ -12,8 +12,8 @@
 */
 
 Route::get('/','artController@index');
-Route::get('/explain','artController@explain');
-Route::get('/quiz','artController@quiz');
+Route::get('/explain/{art}','artController@explain');
+
 Route::get('/manage','artController@manage');
 
 Route::post('/posts', 'artController@posts');
