@@ -14,6 +14,6 @@
 Route::get('/','artController@index');
 Route::get('/explain/{art}','artController@explain');
 
-Route::get('/manage','artController@manage');
+Route::get('/manage','artController@manage')->middleware('auth');
 
 Route::post('/posts', 'artController@posts');

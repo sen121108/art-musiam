@@ -10,7 +10,7 @@ class art extends Model
     'image',
     'title',
     'body',
-    'quiz',
+    'name',
     'ans1',
     'ans2',
     'ans3',

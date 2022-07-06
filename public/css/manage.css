@@ -5,3 +5,17 @@ body {
 #title {
     margin-bottom: 3rem;
 }
+
+textarea {
+    resize: none;
+    width: 400px;
+    height: 200px;
+}
+
+input {
+    width: 400px;
+}
+
+.back {
+    margin-top: 50px;
+}

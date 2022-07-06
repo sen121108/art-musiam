@@ -27,7 +27,7 @@ class ArtRequest extends FormRequest
             'art.image' => 'required',
             'art.title' => 'required|string',
             'art.body' => 'required|string',
-            'art.quiz' => 'required|string',
+            'art.name' => 'required|string',
             'art.ans1' => 'required|string',
             'art.ans2' => 'required|string',
             'art.ans3' => 'required|string',

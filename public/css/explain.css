@@ -1,3 +1,106 @@
 #container {
     text-align: center;
 }
+
+
+li p {
+    
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    
+}
+
+li p:hover{
+  opacity: 0.7;
+  font-size: 1.2rem;
+  color: #c98f69;
+  cursor: pointer;
+}
+
+.moveimg {
+  animation: movee 3s infinite ease-in-out alternate;
+  
+  display: inline-block;
+  transition: 1.5s ease-in-out;
+  
+}
+ 
+@keyframes movee {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+
+.name {
+    color: white;
+    opacity: 0.7;
+    background-color: black;
+    
+    font-size: 1.4rem;
+    width: 15rem;
+    padding:2px 30px;
+    
+    margin: -40px auto  4rem auto;
+    
+    
+    
+    
+    
+}
+
+.body {
+    margin-bottom: 2rem;
+    
+}
+
+
+.back {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  
+}
+
+.back a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.back a:hover{
+  font-size: 1.3rem;
+  color: #c98f69;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+
+#answer {
+  margin-top: 5rem;
+  color: red;
+  background-color: white;
+  padding: 2rem 0;
+  display: none;
+}
+
+#answer p{
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: black;
+  
+}
+
+#check {
+  display: none;
+  color: red;
+  margin-top: 5rem;
+  
+}
+

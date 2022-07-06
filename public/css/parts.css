@@ -1,8 +1,45 @@
+body {
+   font-family: "Times New Roman", Times, "serif";
+   
+    background-color: #f9f9f9;
+    margin-top: 0;
+    
+}
+
 #title {
     text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-top: 0;
+    
+    
+
 }
+
+#title h1 {
+    
+    color: #c98f69;
+    top: 55px;
+    left: 25%;
+    right:25%;
+    
+}
+
+
 
 .adjust {
     width: 15rem;
     height: 20rem;
+    border-radius: 20%;
+    margin-top: 2rem;
+    
 }
+
+.adjust:hover {
+    width: 16rem;
+    height: 21rem;
+    
+    transition: 0.5s all;
+}
+
+
