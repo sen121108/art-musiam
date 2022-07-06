@@ -16,9 +16,9 @@ class CreateArtTable extends Migration
         Schema::create('art', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('image');
-            $table->string('title',20);
-            $table->string('body');
-            $table->string('quiz');
+            $table->string('name'); //人物めい
+            $table->string('title');//作品名
+            $table->string('body');//作品詳細
             $table->string('ans1');
             $table->string('ans2');
             $table->string('ans3');

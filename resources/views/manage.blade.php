@@ -19,25 +19,26 @@
             <div class="make">
                 <form onsubmit="return check()" action="/posts" method="POST" enctype='multipart/form-data' >
                 @csrf
-                <div class="content">
-                    <h2>Title</h2>
-                    <input type="text" name="art[title]" placeholder="タイトル" value="{{ old('art.title') }}" />
-                    <p class="title_error" style="color:red">{{ $errors ->first('art.title') }}</p>
-                </div>
+                
                  <div class="content">
                     <h2>Image</h2>
                     <input type="file" accept=".jpg,.jpeg,.png" name="art[image]" placeholder="画像" value="{{ old('art.image') }}" />
                     <p class="image_error" style="color:red">{{ $errors ->first('art.image') }}</p>
                 </div>
                  <div class="content">
-                    <h2>body</h2>
-                    <textarea name="art[body]" placeholder="タイトル" value="{{ old('art.body') }}" ></textarea>
-                    <p class="body_error" style="color:red">{{ $errors ->first('art.body') }}</p>
+                    <h2>Title of Painting</h2>
+                    <input type="text" name="art[title]" placeholder="作品タイトル" value="{{ old('art.title') }}" />
+                    <p class="title_error" style="color:red">{{ $errors ->first('art.title') }}</p>
                 </div>
-                <div class="content">
-                    <h2>Quiz</h2>
-                    <textarea name="art[quiz]" placeholder="問題文" value="{{ old('art.quiz') }}"></textarea>
-                    <p class="quiz_error" style="color:red">{{ $errors ->first('art.quiz') }}</p>
+                 <div class="content">
+                    <h2>name of writing painting</h2>
+                    <input type="text" name="art[name]" placeholder="著者" value="{{ old('art.name') }}" />
+                    <p class="name_error" style="color:red">{{ $errors ->first('art.name') }}</p>
+                </div>
+                 <div class="content">
+                    <h2>explain of painting</h2>
+                    <textarea name="art[body]" placeholder="説明" value="{{ old('art.body') }}" ></textarea>
+                    <p class="body_error" style="color:red">{{ $errors ->first('art.body') }}</p>
                 </div>
                 <div class="content">
                     <h2>Ans1</h2>
