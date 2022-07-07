@@ -42,4 +42,15 @@ body {
     transition: 0.5s all;
 }
 
+.back a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.5s;
+}
 
+.back a:hover{
+  font-size: 1.3rem;
+  color: #c98f69;
+  text-decoration: none;
+  opacity: 0.7;
+}

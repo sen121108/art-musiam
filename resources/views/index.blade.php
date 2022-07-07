@@ -37,8 +37,8 @@
                 </div>
                 @endforeach
             </div>
-             <div class="make">
-                    <a href ="/manage">Regist as Manager </a>
+             <div id="make">
+                    <a href ="/manage" onclick=" return check() ">Regist as Manager </a>
             </div>
         </section>
         
