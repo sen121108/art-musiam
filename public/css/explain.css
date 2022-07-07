@@ -20,8 +20,10 @@ li p:hover{
 }
 
 .moveimg {
+  width: 17rem;
+  height: 22rem;
   animation: movee 3s infinite ease-in-out alternate;
-  
+  border-radius: 50%;
   display: inline-block;
   transition: 1.5s ease-in-out;
   
@@ -68,18 +70,7 @@ li p:hover{
   
 }
 
-.back a {
-  color: black;
-  text-decoration: none;
-  transition: color 0.5s;
-}
 
-.back a:hover{
-  font-size: 1.3rem;
-  color: #c98f69;
-  text-decoration: none;
-  opacity: 0.7;
-}
 
 
 #answer {

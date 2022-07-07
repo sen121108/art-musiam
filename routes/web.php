@@ -14,6 +14,7 @@
 Route::get('/','artController@index');
 Route::get('/explain/{art}','artController@explain');
 
-Route::get('/manage','artController@manage')->middleware('auth');
+Route::get('/manage','artController@manage');
 
 Route::post('/posts', 'artController@posts');
+Route::delete('/del/{art}', 'artController@delite');

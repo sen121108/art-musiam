@@ -18,8 +18,8 @@ class artController extends Controller
     
     
     
-     public function manage() {
-        return view('manage');
+     public function manage(art $art) {
+        return view('manage')->with(['arts' =>$art->get()]);
     }
     
     // public function manageView(){
@@ -34,6 +34,11 @@ class artController extends Controller
         
        
         return redirect('/manage/');
+    }
+    
+    public function delite(art $art) {
+        $art->delete();
+        return redirect('/');
     }
     
 }

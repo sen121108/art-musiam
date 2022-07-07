@@ -20,4 +20,17 @@ window.addEventListener('load' , function() {
     }//for文終了
     
     
+  
+    
 });
+
+function check() {
+    let result = window.confirm('管理者で間違いないですか？');
+    if(result) {
+        return true;
+    }else {
+        window.alert('キャンセルされました');
+        return false;
+    }
+    
+}

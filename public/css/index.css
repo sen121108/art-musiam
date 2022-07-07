@@ -65,15 +65,15 @@
     
 }
 
-.make {
+#make {
     text-align: center;
      margin: 2rem 0;
 }
-.make a{
+#make a{
     text-decoration: none;
     color: black;
 }
 
-.make a:hover {
+#make a:hover {
     color: #c98f69;
 }

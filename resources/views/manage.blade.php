@@ -7,6 +7,9 @@
         <title>Museum</title>
         <link href="/css/manage.css" rel="stylesheet">
         <script src="/js/manage.js"></script>
+         <link href="/css/parts.css" rel="stylesheet">
+        <script src="/js/parts.js"></script>
+        
         
     </head>
     <body>
@@ -17,6 +20,7 @@
         <section>
             <h1>新規作成ページ</h1>
             <div class="make">
+                
                 <form onsubmit="return check()" action="/posts" method="POST" enctype='multipart/form-data' >
                 @csrf
                 
@@ -60,10 +64,24 @@
                     <input type="text" name="art[ans4]" placeholder="答え４" value="{{ old('art.ans4') }}" />
                     <p class="ans4_error" style="color:red">{{ $errors ->first('art.ans4') }}</p>
                 </div>
-                
-                <input type="submit" value="投稿する"/>
+                <div class="post">
+                    <input type="submit" value="投稿する"/>
+                </div>
               </div>
             </form>
+            <h3 id="goDelete">投稿の削除を行う</h3>
+            <div id="delete">
+                @foreach($arts as $art)
+                <form action="/del/{{$art->id}}" id="form_{{$art->id}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <p>{{$art->id}}</p>
+                    <p> {{$art->title}} </p>
+                    <button type="submit" class="btn">投稿の削除する</button>
+                    
+                </form>
+                @endforeach
+            </div>
             <div class="back">
                 <a href="/">投稿を見る</a>
                 </div>
