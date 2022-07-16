@@ -23,7 +23,7 @@ class CreateArtTable extends Migration
             $table->string('ans2');
             $table->string('ans3');
             $table->string('ans4');
-            $table->timestamps();
+            $table->timestamps('created_at');
             
         });
     }
